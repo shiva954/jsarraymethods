@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+
+<body>
+    <h3>Library Late Fees
+        Scenario: A library management system where fines are automatically calculated for late book returns.
+        Problem: Calculate the total fine based on the number of lateDays.
+        Input: Integer lateDays.
+        Conditions:
+        If lateDays is between 1-5, the fine is $2 per day.
+        If lateDays is between 6-10, the fine is $3 per day.
+        If lateDays > 10, the fine is $5 per day.
+        Expected Output: Total fine amount.
+        Example:
+        Input: lateDays = 7
+        Output: 21 (7 * 3)
+
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+        let lateDays = Number(prompt("enter number of late days:"));
+
+        if (lateDays >= 1 && lateDays <= 5) {
+            console.log(`the fine amount to pay is: ${lateDays * 2}`);
+        }
+        else if (lateDays >= 6 && lateDays <= 10) {
+            console.log(`the fine amount to pay is: ${lateDays * 3}`);
+        }
+        else if (lateDays > 10) {
+            console.log(`the fine amount to pay is: ${lateDays * 5}`);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

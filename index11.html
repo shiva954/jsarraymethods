@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+
+<body>
+    <h3>Inventory Management for Expiry Dates
+        Scenario: You’re developing an inventory system for a supermarket to check item expiration status.
+        Problem: Given the current day and expiration day, determine if an item is expired.
+        Input:
+        currentDay (integer, representing the day of the year, 1-365),
+        expiryDay (integer, representing the day of the year the item expires).
+        Conditions:
+        If expiryDay < currentDay, the item is expired. If expiryDay>= currentDay, the item is not expired.
+            Expected Output: "Expired" or "Not Expired".
+            Example:
+            Input: currentDay = 250, expiryDay = 245
+            Output: "Expired"
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+
+
+        let currentDay = Number(prompt("enter the current day:"));
+        let expireDay = Number(prompt("enter the expiry day:"));
+        if (currentDay > expireDay) {
+            console.log(`Expired`);
+        }
+        else if (currentDay <= expireDay) {
+            console.log(`not Expired`);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 14</title>
+</head>
+
+<body>
+    <h3>Vowel-Consonant Alternation Checker
+        Scenario: In a language-processing application, you need to check if a string alternates between vowels and
+        consonants.
+        Problem: Given a string, check if it follows this vowel-consonant pattern.
+        Input: A string, e.g., "abacaba".
+        Conditions:
+        The string should alternate between vowels and consonants.
+        Vowels are "a, e, i, o, u".
+        Expected Output: "Pattern followed" or "Pattern broken".
+        Example:
+        Input: "abacaba"
+        Output: "Pattern followed"
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+
+        let str = prompt("enter a string:").toLowerCase();
+        let updatedStr = "";
+        for (let i = 0; i < str.length; i++) {
+            if (str.charAt(i) !== " ") {
+                updatedStr += str.charAt(i);
+            }
+        }
+        let order = [];
+        for (let j = 0; j < updatedStr.length; j++) {
+            if (updatedStr.charAt(j) == 'a' || updatedStr.charAt(j) == 'e' || updatedStr.charAt(j) == 'i' || updatedStr.charAt(j) == 'o' || updatedStr.charAt(j) == 'u') {
+                order.push('v');
+            }
+            else {
+                order.push('c');
+            }
+        }
+        let patternBroken = false;
+        for (let k = 0; k < order.length; k++) {
+            if (k + 1 < order.length) {
+                if ((order[k] == 'v' && order[k + 1] !== 'c') || (order[k] == 'c' && order[k + 1] !== 'v')) {
+                    patternBroken = true;
+                }
+            }
+        }
+        if (patternBroken) {
+            console.log(`Pattern Broken`);
+        }
+        else {
+            console.log(`Pattern Followed`);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

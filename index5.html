@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+
+<body>
+    <h3>Food Preference Survey
+        Scenario: You’re working on a survey tool for a food service company, where users select their favorite food,
+        and the system responds accordingly.
+        Problem: Print a response based on the user’s choice.
+        Input: A string favoriteFood which could be "Pizza", "Pasta", "Burger", or something else.
+        Conditions:
+        "Pizza" → "Pizza lover!"
+        "Pasta" → "Pasta lover!"
+        "Burger" → "Burger lover!"
+        Any other input → "Invalid choice"
+        Expected Output: A message acknowledging the user's choice.
+        Example:
+        Input: favoriteFood = "Pizza"
+        Output: "Pizza lover!"
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+
+        let food = prompt("enter your favourite food:").toLowerCase();
+        let favouriteFood = "";
+        for (let i = 0; i < food.length; i++) {
+            if (!(food.charAt(i) === " ")) {
+                favouriteFood += food.charAt(i);
+            }
+        }
+        switch (favouriteFood) {
+            case "pizza":
+                console.log(`Pizza lover!`);
+                break;
+            case "pasta":
+                console.log(`Pasta lover!`);
+                break;
+            case "burger":
+                console.log(`Burger lover!`);
+                break;
+            default:
+                console.log(`invalid input`);
+        }
+
+
+    </script>
+</body>
+
+</html>

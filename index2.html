@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+
+<body>
+    <h3>Temperature Alert System
+        Scenario: You’re working for a smart home company developing a temperature alert system.
+        Problem: Based on the temperature, print an alert message for the user.
+        Input: An integer temperature, representing the current temperature in °C.
+        Conditions:
+        If temperature > 40, print "Extreme Heat".
+        If temperature is between 20 and 40, print "Moderate".
+        If temperature < 20, print "Cold" . Expected Output: An alert message describing the temperature level. Example:
+            Input: temperature=42 Output: "Extreme Heat" </h3>
+            <h3>open console for output</h3>
+            <script>
+                let temprature = Number(prompt("enter the current temprature:"));
+                if (temprature < 20) {
+                    console.log(`cold`);
+                }
+                else if (temprature > 20 && temprature < 40) {
+                    console.log(`Moderate`);
+                }
+                else if (temprature > 40) {
+                    console.log(`Extreme heat`);
+                }
+
+            </script>
+</body>
+
+</html>

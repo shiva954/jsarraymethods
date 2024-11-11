@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+
+<body>
+    <h3>School Attendance Checker
+        Scenario: A school portal that checks if students can sit for exams based on attendance.
+        Problem: Calculate attendance percentage and determine eligibility.
+        Input:
+        totalClasses (int),
+        classesAttended (int).
+        Condition: If attendance ≥ 75%, print "Eligible"; else, print "Not Eligible".
+        Example:
+        Input: totalClasses = 40, classesAttended = 30
+        Output: "Eligible" (75% attendance)
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+
+        let totalClasses = Number(prompt("total number of classes:"));
+        let classesAttended = Number(prompt("total number of classes attended:"));
+
+        if (((classesAttended / totalClasses) * 100) > 75) {
+            console.log(`Eligible`);
+        }
+        else {
+            console.log(`not Eligible`);
+        }
+
+
+    </script>
+</body>
+
+</html>

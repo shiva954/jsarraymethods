@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+
+<body>
+    <h3>Sales Target Achievement
+        Scenario: A sales system where employees get bonuses based on performance against sales targets.
+        Problem: Calculate the bonus based on target achievement percentage.
+        Input:
+        salesTarget (float percentage),
+        monthlySalary (float).
+        Conditions:
+        If salesTarget > 120%, bonus = 20% of monthlySalary.
+        If 100% ≤ salesTarget ≤ 120%, bonus = 10% of monthlySalary.
+        Below 100%, no bonus.
+        Expected Output: Bonus amount.
+        Example:
+        Input: salesTarget = 130, monthlySalary = 50000
+        Output: 10000 (20% of 50,000)
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+        let sales = Number(prompt("enter your sales percent:"));
+        if (sales < 100) {
+            console.log(`no bonus`);
+        }
+        else if (sales >= 100 && sales <= 120) {
+            let salary = Number(prompt("enter your monthly salary:"));
+            console.log(`the bonus amount is ${(10 / 100) * salary}`);
+        }
+        else if (sales > 120) {
+            let salary = Number(prompt("enter your monthly salary:"));
+            console.log(`the bonus amount is ${(20 / 100) * salary}`);
+        }
+
+
+    </script>
+</body>
+
+</html>

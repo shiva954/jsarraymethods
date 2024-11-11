@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+
+<body>
+    <h3>Bank Transaction Validator
+        Scenario: You’re designing a system to check if a user has sufficient funds for a transaction.
+        Problem: Determine if a user can make a withdrawal based on their balance and withdrawalAmount.
+        Input:
+        balance (float),
+        withdrawalAmount (float).
+        Conditions:
+        If balance ≥ withdrawalAmount, allow the transaction.
+        If balance < withdrawalAmount, reject the transaction. </h3>
+            <h3>open console for output</h3>
+            <script>
+
+
+                let balance = Number(prompt("enter your balance:"));
+                let withdraw = Number(prompt("enter the amount to withdraw:"));
+                if (balance >= withdraw) {
+                    console.log(`transaction approved`);
+                }
+                else {
+                    console.log(`insufficient funds`);
+                }
+
+
+            </script>
+</body>
+
+</html>

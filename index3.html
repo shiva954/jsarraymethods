@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+
+<body>
+    <h3>Grades Based on Marks
+        Scenario: A grading system for students that automatically assigns a grade based on marks scored.
+        Problem: Given a marks value, assign a grade according to predefined cutoffs.
+        Input: Integer marks.
+        Conditions:
+        If marks ≥ 90, print "A+"
+        If marks is between 80 and 89, print "A"
+        If marks is between 70 and 79, print "B"
+        If marks < 70, print "C" Expected Output: A string representing the grade. Example: Input: marks=85 Output: "A"
+            </h3>
+            <h3>open console for output</h3>
+            <script>
+                let marks = Number(prompt("enter the marks:"));
+                if (marks < 70) {
+                    console.log(`C`);
+                }
+                else if (marks >= 70 && marks <= 79) {
+                    console.log(`B`);
+                }
+                else if (marks >= 80 && marks <= 89) {
+                    console.log(`A`);
+                }
+                else if (marks >= 90) {
+                    console.log(`A+`);
+                }
+
+
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15</title>
+</head>
+
+<body>
+    <h3>Digit Sum Parity Checker
+        Scenario: For a data validation algorithm, check if the sum of digits in an ID number is even or odd.
+        Problem: Calculate the sum of the digits in an integer and determine if it’s even or odd.
+        Input: An integer, e.g., 12345.
+        Expected Output: "Sum is Even" or "Sum is Odd".
+        Example:
+        Input: 12345
+        Output: "Sum is Odd"
+
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+
+        let num = Number(prompt("eneter a number:"));
+        let sum = 0;
+        while (num > 0) {
+            let remainder = num % 10;
+            sum += remainder;
+            num = Math.floor(num / 10);
+        }
+        if (sum % 2 == 0) {
+            console.log(`even`);
+        }
+        else {
+            console.log(`odd`);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

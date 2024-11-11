@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+
+<body>
+    <h3>Loan Eligibility Checker
+        Scenario: An automated system for loan eligibility based on customer criteria at a bank.
+        Problem: Based on an applicant's age, income, and criminal record, determine if they’re eligible for a loan.
+        Input:
+        age (integer),
+        income (float),
+        hasCriminalRecord (boolean)
+        Conditions:
+        Age between 21 and 60.
+        Income > 20,000.
+        No criminal record.
+        Expected Output: "Eligible for Loan" or "Not Eligible".
+        Example:
+        Input: age = 30, income = 25000, hasCriminalRecord = false
+        Output: "Eligible for Loan"
+    </h3>
+    <h3>open console for output</h3>
+
+    <script>
+        let age = Number(prompt("enter your age: "));
+        if (age > 21 && age < 60) {
+            let salary = parseFloat(prompt("enter your salary:"));
+            if (salary > 20000) {
+                let criminalRecord = prompt("do you have any criminal record:");
+                if (criminalRecord == "true") {
+                    console.log(` not Eligible for loan`);
+                }
+                else {
+                    console.log(`Eligible for loan`);
+                }
+            }
+            else {
+                console.log(` not Eligible for loan`);
+            }
+        }
+        else {
+            console.log(` not Eligible for loan`);
+        }
+
+
+    </script>
+</body>
+
+</html>

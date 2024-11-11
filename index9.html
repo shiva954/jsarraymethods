@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+
+<body>
+    <h3>Online Shop Loyalty Points
+        Scenario: A loyalty program that awards points to users based on purchase amounts.
+        Problem: Calculate points based on purchaseAmount.
+        Input: purchaseAmount (float).
+        Conditions:
+        For purchases under $100, 1 point per $10.
+        For $100 or more, 2 points per $10.
+        Expected Output: Total points.
+        Example:
+        Input: purchaseAmount = 150
+        Output: 30 points (2 points per $10)
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+
+        let purchaseAmount = Math.floor(Number(prompt("enter the purchase amount:")));
+        let dummy = purchaseAmount;
+        let count = 0;
+        while (dummy >= 10) {
+            dummy -= 10;
+            count++;
+        }
+        if (purchaseAmount < 100) {
+            console.log(`the bonus point for your purchase amount is ${count}`);
+        }
+        else if (purchaseAmount >= 100) {
+
+            console.log(`the bonus point for your purchase amount is ${2 * count}`);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

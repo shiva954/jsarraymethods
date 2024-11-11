@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+
+<body>
+
+    <h3>
+        Product Discount
+        Scenario: Imagine you work at an e-commerce company where discounts are applied to customer purchases. Your code
+        will help automate this calculation.
+        Problem: Given a total purchase amount, calculate the discount and print the final amount.
+        Input: An integer totalAmount, representing the total purchase amount.
+        Conditions:
+        If totalAmount > 500, apply a 20% discount.
+        If totalAmount is between 200 and 500, apply a 10% discount.
+        If totalAmount < 200, no discount is applied. Expected Output: The final amount after applying the discount.
+            Example: Input: totalAmount=600 Output: 480 (600 - 20% of 600) </h3>
+
+            <h3>open console for output</h3>
+            <script>
+                let totalAmount = Number(prompt("please enter the total amount:"));
+                if (totalAmount < 200) {
+                    console.log(`sorry there is no discount for total amount under 200$`);
+                }
+                else if (totalAmount > 200 && totalAmount < 500) {
+                    let discount = (10 / 100) * totalAmount;
+                    console.log(`congratulations you get 10% discount.your total amount after the discount is : ${totalAmount - discount}`);
+                }
+                else if (totalAmount > 500) {
+                    let discount = (20 / 100) * totalAmount;
+                    console.log(`congratulations you get 20% discount.your total amount after the discount is : ${totalAmount - discount}`);
+                }
+
+            </script>
+</body>
+
+</html>

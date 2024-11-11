@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+</head>
+
+<body>
+    <h3>Even-Odd Alternating Pattern Checker
+        Scenario: In manufacturing, items in an assembly line must alternate between even and odd item codes for quality
+        checking.
+        Problem: Check if an array of integers follows an alternating pattern (even-odd-even-odd).
+        Input: An array of integers, e.g., [2, 3, 4, 5].
+        Conditions:
+        Starting from the first item, the sequence should alternate between even and odd.
+        Expected Output: "Pattern followed" or "Pattern broken".
+        Example:
+        Input: [2, 3, 4, 5]
+        Output: "Pattern followed"
+    </h3>
+    <h3>open console for output</h3>
+    <script>
+
+
+        let arr = [];
+        for (let i = 0; i < 6; i++) {
+            arr.push(Number(prompt(`enter the number for index ${i}`)));
+        }
+        let order = [];
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] % 2 == 0) {
+                order.push('e');
+            }
+            else {
+                order.push('o');
+            }
+        }
+        let patternBroken = false;
+        for (let k = 0; k < order.length; k++) {
+            if (k + 1 < order.length) {
+                if ((order[k] == 'o' && order[k + 1] !== 'e') || (order[k] == 'e' && order[k + 1] !== 'o')) {
+                    patternBroken = true;
+                }
+            }
+        }
+        if (patternBroken) {
+            console.log(`Pattern Broken`);
+        }
+        else {
+            console.log(`Pattern Followed`);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
